@@ -1,0 +1,5 @@
+(defun demo2-run ()
+  (interactive)
+  (let ((compilation-buffer-name-function (lambda (mode)
+                                            (format "*demo2-run*"))))
+    (compile "./run.sh")))
