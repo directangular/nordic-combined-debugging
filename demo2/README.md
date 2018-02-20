@@ -1,6 +1,6 @@
 # Demo 2: text editor integrations
 
-## Emacs
+## Emacs stack trace jumping
 
 - Eval `demo2.el`
 - Run `M-x demo2-run`
@@ -9,6 +9,6 @@
 You should get a server error, as well as a highlighted stack trace in your
 compilation buffer where the app is running.
 
-## VS Code
+## VS Code stack trace jumping
 
 TODO
