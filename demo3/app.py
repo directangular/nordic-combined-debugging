@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 def dumpstacks(signal, frame):
-    """https://stackoverflow.com/a/2569696/209050"""
+    """Adapted from https://stackoverflow.com/a/2569696/209050"""
     id2name = dict([(th.ident, th.name) for th in threading.enumerate()])
     code = []
     app.logger.error("Got signal to dump stacks. Your wish is my command.")
