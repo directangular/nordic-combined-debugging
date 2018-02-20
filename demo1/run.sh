@@ -5,4 +5,4 @@
     exit 1
 }
 
-FLASK_APP=app.py env/bin/flask run
+env/bin/python app.py

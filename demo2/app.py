@@ -13,3 +13,7 @@ def hello():
 @app.route("/pizza")
 def ninety_nine():
     return "pizza is good"
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5002)

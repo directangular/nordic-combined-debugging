@@ -34,3 +34,7 @@ def hello():
 @app.route("/winner")
 def winner():
     return 'YOU WIN! <a href="/">back</a>'
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)

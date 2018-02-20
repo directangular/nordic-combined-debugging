@@ -2,4 +2,5 @@
   (interactive)
   (let ((compilation-buffer-name-function (lambda (mode)
                                             (format "*demo2-run*"))))
-    (compile "./run.sh")))
+    (compile (format "cd %s && ./run.sh"
+                     (file-name-directory buffer-file-name)))))
